@@ -11,6 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ugur.cookminute_navigation.Fragment.FragmentAcceuil;
+import com.example.ugur.cookminute_navigation.Fragment.FragmentListeDeCourse;
+import com.example.ugur.cookminute_navigation.Fragment.FragmentMesMenus;
+import com.example.ugur.cookminute_navigation.Fragment.FragmentMonMarché;
+import com.example.ugur.cookminute_navigation.Fragment.FragmentSettings;
+
 /**
  * Created by Ugur on 30/10/2015.
  */
@@ -65,18 +71,28 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             switch (getPosition()){
                 case 1:
-                    Fragment squadFragment = new AccueilFragment();
-                    fragmentTransaction.replace(R.id.containerView,squadFragment);
+                    Fragment FragmentAccueil = new FragmentAcceuil();
+                    fragmentTransaction.replace(R.id.containerView,FragmentAccueil);
                     fragmentTransaction.commit();
                     break;
                 case 2:
-                    Fragment fixtureFragment = new MesMenusFragment();
-                    fragmentTransaction.replace(R.id.containerView,fixtureFragment);
+                    Fragment FragmentMesMenus = new FragmentMesMenus();
+                    fragmentTransaction.replace(R.id.containerView,FragmentMesMenus);
                     fragmentTransaction.commit();
                     break;
                 case 3:
-                    Fragment tableFragment = new MaListeDeCourseFragment();
-                    fragmentTransaction.replace(R.id.containerView,tableFragment);
+                    Fragment FragmentMonMarché = new FragmentListeDeCourse();
+                    fragmentTransaction.replace(R.id.containerView,FragmentMonMarché);
+                    fragmentTransaction.commit();
+                    break;
+                case 4:
+                    Fragment fragmentMonMarché = new FragmentMonMarché();
+                    fragmentTransaction.replace(R.id.containerView,fragmentMonMarché);
+                    fragmentTransaction.commit();
+                    break;
+                case 5:
+                    Fragment fragmentSettings = new FragmentSettings();
+                    fragmentTransaction.replace(R.id.containerView,fragmentSettings);
                     fragmentTransaction.commit();
                     break;
             }
@@ -94,11 +110,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         LayoutInflater layoutInflater = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if(viewType==1){
-            View itemLayout =   layoutInflater.inflate(R.layout.drawer_item_layout,null);
+            View itemLayout =   layoutInflater.inflate(R.layout.g_drawer_item_layout,null);
             return new ViewHolder(itemLayout,viewType,context);
         }
         else if (viewType==0) {
-            View itemHeader = layoutInflater.inflate(R.layout.header_layout,null);
+            View itemHeader = layoutInflater.inflate(R.layout.h_header_layout,null);
             return new ViewHolder(itemHeader,viewType,context);
         }
 

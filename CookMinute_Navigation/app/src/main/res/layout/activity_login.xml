@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML file for smartphone with normal screen size -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondlancement"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="3">
+
+
+    <!-- We define a transparent font !-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary_dark_material_dark"
+        android:alpha="0.2">
+    </LinearLayout>
+
+
+    <!-- Linear to let some space between the top of screen and logo -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+    </LinearLayout>
+
+
+    <!--LinearLayout to center in vertical mode all objects in this xml file -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+
+        <!-- Add logo image -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_small_screen"
+            android:maxWidth="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+        </ImageView>
+
+        <!--*************
+        We closing the linear to have more empty space
+        **************-->
+    </LinearLayout>
+
+
+    <!-- New Linear for Title and Subtitle-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+
+        <!-- New Linear for let some space before title : This space is between logo and title-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3">
+        </LinearLayout>
+
+
+        <!-- Linear for Title and Subtitle -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            >
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/fullscreen_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/t_titre_m"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phraseDeLancement"
+                android:keepScreenOn="true"
+                android:text="@string/PhraseLancement"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <!-- Linear for let some space before title
+        This space is between subtitle and buttons -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:background="@color/first">
+    </LinearLayout>
+
+
+    <!-- Linear to englobe buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <!-- This Linear containing 2 buttons, thanks to it we put vertically the 2 connection buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <!-- Linear for fb button -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <!-- fb button
+                 **********************
+                 *** add android:background="@color/bleufb"
+                 **********************-->
+                <Button
+                    android:id="@+id/btnfb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login with Facebook"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    />
+                </LinearLayout>
+
+
+            <!-- Linear for g+ button -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <!-- G+ button -->
+                <Button
+                    android:id="@+id/google"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login with Google +"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

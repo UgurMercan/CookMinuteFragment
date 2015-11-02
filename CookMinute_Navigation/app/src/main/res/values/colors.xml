@@ -2,7 +2,35 @@
 
 <resources>
 
-    <color name="statusBarColor">#4169E1</color>
-    <color name="toolBarColor">#4682B4</color>
+    <color name="statusBarColor">#1B5E20</color>
+    <color name="toolBarColor">#ADCFB7</color>
+
+
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#C51162</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Color used for navigation drawer -->
+    <color name="background_header_image">#43A573</color>
+
+
+    <!-- Color from first CookMinute -->
+    <color name="lightGreen">#ADCFB7</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grayPhrase">#4A4A4A</color>
+
+    <!-- Color for example -->
+    <color name="first">#F44336</color>
+    <color name="second">#E91E63</color>
+    <color name="third">#9C27B0</color>
+    <color name="four">#673AB7</color>
+    <color name="five">#2196F3</color>
+
+
+    <!-- Material Design Color -->
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
 
 </resources>

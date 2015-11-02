@@ -1,10 +1,23 @@
 <resources>
-    <string name="app_name">CookMinute_Navigation</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!-- SplashScreen -->
+    <string name="app_name">CookMinute</string>
+    <string name="PhraseLancement">Mangez avec votre temps</string>
 
 
+    <!-- Inscription activity -->
+    <string name="WantToknowYou">Nous souhaitons mieux vous connaître</string>
+    <string name="SubscribeQuestion1">1.Selectionner les équipements de cuisine que vous possèdez :</string>
+    <string name="SubscribeQuestion2">2.Vous souhaitez des menus pour une ou deux personnes ?</string>
+
+
+    <!-- accueil_screen -->
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+
+    <!-- Navigation drawer items -->
     <string-array name="navDrawerItems">
         <item>Accueil</item>
         <item>Mes Menus</item>
@@ -13,6 +26,7 @@
         <item>Paramètres</item>
     </string-array>
 
+    <!-- Navigation drawer icons -->
     <string-array name="navDrawerIcons">
 
         <item>@drawable/ic_home_black_mdpi</item>
@@ -21,6 +35,7 @@
         <item>@drawable/ic_store_mall_directory_black_mdpi</item>
         <item>@drawable/ic_settings_black_mdpi</item>
 
-
     </string-array>
+
+
 </resources>

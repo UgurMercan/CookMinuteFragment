@@ -2,4 +2,43 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- Dimen imported by the first version of CookMinute -->
+
+    <!--******************************************
+dp : margin, padding, taille, mise en page
+sp : taille des polices
+********************************************-->
+
+    <!-- Dimens for normal screen size -->
+    <!-- Margins SplashScrenn -->
+    <dimen name="l_st_lancement">35dp</dimen>
+    <dimen name="space_subTitle">15dp</dimen>
+
+    <!-- Margins inscription in Medium Screen mode for inscription
+    mT : marginTop ; mQ : marginQuestion ; mlL : margin little Left; mLL : margin Large Left
+
+    -->
+    <dimen name="mT_checkbox">50dp</dimen>
+    <dimen name="mQ">5dp</dimen>
+    <dimen name="mlL_checkbox">25dp</dimen>
+    <dimen name="mLL_checkbox">175dp</dimen>
+
+
+    <!-- Police size
+     t_titre_m : taille titre moyen; tqm : taille question moyen-->
+    <dimen name="t_titre_m">40sp</dimen>
+    <dimen name="subtitle">14sp</dimen>
+    <dimen name="tqm">12sp</dimen>
+
+    <!-- Dimen for accueil_screen -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_drawer_width">260dp</dimen>
+
 </resources>

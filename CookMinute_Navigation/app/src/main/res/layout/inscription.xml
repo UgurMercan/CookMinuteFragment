@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML file for smartphone with normal screen size -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <!-- We let some space at the top of the screen -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <!-- Linear for Title "Inscription" and the phrase -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/TopLinear"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inscription"
+            android:text="INSCRIPTION"
+            android:textColor="@color/lightGreen"
+            android:textSize="@dimen/t_titre_m"
+            android:fontFamily="@string/WantToknowYou"/>
+
+    </LinearLayout>
+
+    <!-- Linear for the CookMinute logo -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/image"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WantToknowYou"
+            android:textSize="@dimen/subtitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_small_screen"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <!-- Linear for first question -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SubscribeQuestion1"
+            android:textSize="@dimen/tqm"
+            android:textColor="@color/grayPhrase"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/mQ" />
+
+
+    <!-- Linear in horizontal position for first response -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <!-- We let some empty space to more center the response -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.2">
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/micrononde"
+                android:text="Micro-onde"
+                android:textSize="@dimen/tqm"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/four"
+                android:text="Four"
+                android:textSize="@dimen/tqm"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+            <!-- We let some empty space to more center the response -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.3">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Linear for second question -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SubscribeQuestion2"
+                android:textSize="@dimen/tqm"
+                android:textColor="@color/grayPhrase"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/mQ" />
+
+                <!--  Linear for response to second question -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <!-- We let some empty space to more center the response -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.2">
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Une"
+                        android:textSize="@dimen/tqm"
+                        android:textColor="@color/black"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deux"
+                        android:textSize="@dimen/tqm"
+                        android:textColor="@color/black"
+                        android:layout_weight="1" />
+
+                    <!-- We let some empty space to more center the response -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.3">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    <!-- Validate button and 25dp margin -->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:layout_weight="1"
+            android:background="@color/lightGreen"
+            android:layout_margin="5dp"
+            />
+
+
+</LinearLayout>
+
+
+
+

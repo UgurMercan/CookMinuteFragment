@@ -11,6 +11,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.example.ugur.cookminute_navigation.Fragment.FragmentAcceuil;
+
 public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
 
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.a_activity_main);
 
             //Let's first set up toolbar
             setupToolbar();
@@ -61,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
             setupDrawerToggle();
 
 
-            //Add the Very First i.e Squad Fragment to the Container
-            Fragment squadFragment = new AccueilFragment();
+            //Accueil Fragment for the Container
+            Fragment fragmentAcceuil = new FragmentAcceuil();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,squadFragment,null);
+            fragmentTransaction.replace(R.id.containerView,fragmentAcceuil,null);
             fragmentTransaction.commit();
 
         }
