@@ -19,6 +19,7 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="grayPhrase">#4A4A4A</color>
+    <color name="darkGreen">#43A573</color>
 
     <!-- Color for example -->
     <color name="first">#F44336</color>

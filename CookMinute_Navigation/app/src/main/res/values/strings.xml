@@ -11,12 +11,6 @@
     <string name="SubscribeQuestion2">2.Vous souhaitez des menus pour une ou deux personnes ?</string>
 
 
-    <!-- accueil_screen -->
-    <string name="nav_item_home">Home</string>
-    <string name="nav_item_friends">Friends</string>
-    <string name="nav_item_notifications">Messages</string>
-
-
     <!-- Navigation drawer items -->
     <string-array name="navDrawerItems">
         <item>Accueil</item>

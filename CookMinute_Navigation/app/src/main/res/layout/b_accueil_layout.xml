@@ -4,45 +4,77 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-   >
+    android:weightSum="3">
 
+    <!-- Linear for "Cette semaine" -->
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
-        android:background="@color/first">
+        android:gravity="center"
+        android:layout_weight="1">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cette semaine"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:id="@+id/tvSquad"/>
+            android:textSize="@dimen/titre_moyen"
+            android:id="@+id/week"/>
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="2"
+        android:layout_weight="1">
+
+
+        <!-- Relative for circle which indicate the number of menu who want the user -->
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/circle"
+            android:background="@drawable/oval"
+            >
+
+
+
+            <TextView
+                android:id="@+id/text"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/app_name"
+                android:textSize="@dimen/subtitle"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    <!-- Linear for "Rapides, Faciles et Sains" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
         android:orientation="vertical"
-        android:layout_weight="1"
-        android:background="@color/second">
+        android:layout_weight="1">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_below="@+id/tvSquad"
-            android:layout_margin="15dp"
-            android:layout_centerHorizontal="true"
-            android:textStyle="bold"
-            android:autoLink="web"
-            android:textColorLink="@android:color/holo_orange_dark"
-            android:textSize="17sp"
-            android:text="RAPIDES, FACILES ET SAINS"/>
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="RAPIDES, FACILES ET SAINS"
+            android:textSize="@dimen/subtitle"
+            />
 
     </LinearLayout>
 </LinearLayout>

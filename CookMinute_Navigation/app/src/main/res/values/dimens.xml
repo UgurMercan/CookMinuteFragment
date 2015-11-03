@@ -17,7 +17,7 @@ sp : taille des polices
 ********************************************-->
 
     <!-- Dimens for normal screen size -->
-    <!-- Margins SplashScrenn -->
+    <!-- Margins SplashScreen -->
     <dimen name="l_st_lancement">35dp</dimen>
     <dimen name="space_subTitle">15dp</dimen>
 
@@ -34,8 +34,10 @@ sp : taille des polices
     <!-- Police size
      t_titre_m : taille titre moyen; tqm : taille question moyen-->
     <dimen name="t_titre_m">40sp</dimen>
+    <dimen name="titre_moyen">24sp</dimen>
     <dimen name="subtitle">14sp</dimen>
     <dimen name="tqm">12sp</dimen>
+
 
     <!-- Dimen for accueil_screen -->
     <!-- Default screen margins, per the Android Design guidelines. -->
